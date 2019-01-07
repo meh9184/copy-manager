@@ -17,8 +17,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 body {
-    /*background-color: #ffc596 !important;*/
-    background-color: #f3f3f3 !important;
+    background-color: #ffffff !important;
     font-size:10pt;
     /*width:455px;*/
     /*overflow:auto;*/
@@ -36,10 +35,6 @@ th.text-remove{
     word-wrap:break-word;
     word-break:break-all;
     padding-right: 10px;
-}
-label input{
-    margin-left: 5px;
-    margin-bottom: 10px;
 }
 .w3-teal {
     background-color: #313236 !important;
@@ -59,6 +54,7 @@ label input{
 .navbar a:hover {
     color: rgba(255, 208, 115, 0.88);
 }
+
 #dt {
     font:80%/1.45em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
     color:#333;
@@ -76,12 +72,6 @@ label input{
     width:50%;
     float:right;
     text-align:right;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    word-wrap:break-word;
-    word-break:break-all;
-    margin-right: 3px;
 }
 .dataTables_paginate {
     width:50px;
@@ -117,12 +107,14 @@ div.multiple {
 table.display td {
     padding:3px 10px;
 }
+
 tr.odd {
     background-color: #ffffff;
 }
 tr.even {
     background-color: #ffffff;
 }
+
 td.group {
     background-color:#d1cfd0;
     border-bottom:2px solid #A19B9E;
@@ -241,6 +233,5 @@ table.display td.center,.dataTables_empty {
     cursor:pointer;
     float:right;
     text-align:right;
-    width: 25px;
-    padding-right: 15px;
+    padding-right: 5px;
 }
