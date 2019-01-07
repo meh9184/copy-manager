@@ -1,4 +1,9 @@
  var oTable ;
+
+ document.addEventListener(`visibilitychange`, function() {
+     location.reload();
+ });
+
  $(document).ready(function(){
 	 oTable = $('#cbtable').DataTable(
 		 {
@@ -40,13 +45,22 @@
  });
 
 function displayRecords(){
-	var clipList=getBackground().getAllClips(); 
-	var len=clipList.length;
+	let clipList=getBackground().getAllClips();
+
+	let len=clipList.length;
+
+    console.log(clipList);
+    console.log(len);
+
 	if (len>0){	$("#record").html("");}			
 	for(var i=len-1; i>=0; i--) {
 		var value =getHTMLEncode(clipList[i]);
 		var col1="<div id='"+i+"' class='copyme multiple' alt='Click to copy' title='Click to copy'>"+value+"</div>";
 		var col2="<img src='../icons/remove.png' class='delete' alt='Remove from clipboard' remid='"+i+"' title='Remove from clipboard'/>";
+
+
+
+
 		//value="<tr></td><td class='center'><</td></tr>";
 		//$("#cbtable tbody").append(value);
 		oTable.row.add([col1,col2]).draw();

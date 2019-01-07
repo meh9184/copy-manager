@@ -8,9 +8,9 @@
       "page": "background/background.html"
    },
 
-   "browser_action": {
+   "sidebar_action": {
       "default_icon": "icons/icon_128.png",
-      "default_popup": "browser_action/browser_action.html",
+      "default_page": "sidebar_action/sidebar_action.html",
       "default_title": "Copy Manager"
    },
 
