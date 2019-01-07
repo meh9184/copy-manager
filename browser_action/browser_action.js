@@ -22,12 +22,7 @@
 					 [5,10,15,20,-1],
 					 [5,10,15,20,"All"]
 				 ]
-		 });
-    
-	
- /*
-oTable=$("#cbtable").dataTable({sPaginationType:"full_numbers",bSort:false,oLanguage:{oPaginate:{sLast:">>",sFirst:"<<",sPrevious:"<",sNext:">"},sZeroRecords:"No records to display",sInfoEmpty:"No entries to show",sEmptyTable:"No clip found. <br/>Please copy some web content."},aLengthMenu:[[5,10,15,20,-1],[5,10,15,20,"All"]]})
-*/
+		 	});
 
 	 $("body").on("click",".delete",function(){
 		 var J=$(this).attr('remid');
@@ -51,7 +46,7 @@ function displayRecords(){
 	for(var i=len-1; i>=0; i--) {
 		var value =getHTMLEncode(clipList[i]);
 		var col1="<div id='"+i+"' class='copyme multiple' alt='Click to copy' title='Click to copy'>"+value+"</div>";
-		var col2="<img src='remove.png' class='delete' alt='Remove from clipboard' remid='"+i+"' title='Remove from clipboard'/>";
+		var col2="<img src='../icons/remove.png' class='delete' alt='Remove from clipboard' remid='"+i+"' title='Remove from clipboard'/>";
 		//value="<tr></td><td class='center'><</td></tr>";
 		//$("#cbtable tbody").append(value);
 		oTable.row.add([col1,col2]).draw();

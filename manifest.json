@@ -1,24 +1,33 @@
 {
+   "name": "Copy Manager",
+   "description": "여러 텍스트를 클립보드에 저장해놓고 효율적으로 사용해보세요!",
+   "manifest_version": 2,
+   "version": "1.0.0",
+
    "background": {
-      "page": "background.html"
+      "page": "background/background.html"
    },
+
    "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "smartclipboard.html",
-      "default_title": "Store and Search contents copied from web"
+      "default_icon": "icons/icon_128.png",
+      "default_popup": "browser_action/browser_action.html",
+      "default_title": "Copy Manager"
    },
+
    "content_scripts": [ {
-      "js": [ "jquery.js", "smartclipboard.js", "clip_hu_mini.js" ],
+      "js": [
+         "library/jquery.js",
+         "content_script/content.js"
+      ],
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
-   "description": "'Store and Search' -  Stores multiple content copied from web and then allows to preview, copy or run a search on those saved texts",
+
    "icons": {
-      "128": "icon_128.png"
+      "128": "icons/icon_128.png"
    },
-   "key": "test",
-   "manifest_version": 2,
-   "name": "Smart Clipboard",
+
    "permissions": [ "tabs" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.3"
+
+   "web_accessible_resources": []
+
 }
