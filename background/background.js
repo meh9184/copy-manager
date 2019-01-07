@@ -10,8 +10,8 @@ chrome.runtime.onMessage.addListener(function(a, c, b) {
                 e = d-25;
                 allClips.splice(0,e);
             }
-            alert(copiedText);
-            alert(allClips);
+            // alert(copiedText);
+            // alert(allClips);
 
             assignBadge()
         }

@@ -10,7 +10,7 @@ function floatBar() {
     });
 
     $("#clipid").hide().prependTo("body")
-        .slideDown('fast').delay(2000).slideUp(function() { $(this).remove(); });
+        .slideDown('fast').delay(1000).slideUp(function() { $(this).remove(); });
 }
 function showMessageWhenCipped(data) {
     var trends_dom = document.createElement('div');

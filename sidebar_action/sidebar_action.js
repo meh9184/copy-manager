@@ -20,7 +20,7 @@
 						 },
 					 sZeroRecords:"No records to display",
 					 sInfoEmpty:"No entries to show",
-					 sEmptyTable:"No clip found. <br/>Please copy some web content."
+					 sEmptyTable:"<br/>복사된 Clip이 없습니다 <br/> Ctrl+C Key로 텍스트를 복사해주세요<br/><br/> "
 				 },
 			 aLengthMenu:
 				 [
@@ -49,17 +49,11 @@ function displayRecords(){
 
 	let len=clipList.length;
 
-    console.log(clipList);
-    console.log(len);
-
 	if (len>0){	$("#record").html("");}			
 	for(var i=len-1; i>=0; i--) {
 		var value =getHTMLEncode(clipList[i]);
 		var col1="<div id='"+i+"' class='copyme multiple' alt='Click to copy' title='Click to copy'>"+value+"</div>";
-		var col2="<img src='../icons/remove.png' class='delete' alt='Remove from clipboard' remid='"+i+"' title='Remove from clipboard'/>";
-
-
-
+		var col2="<img src='../icons/remove.png' class='delete' alt='Remove from clipboard' remid='"+i+"' title='Remove from clipboard'/> ";
 
 		//value="<tr></td><td class='center'><</td></tr>";
 		//$("#cbtable tbody").append(value);
@@ -75,7 +69,7 @@ function copyMe(j){
 	clipboardholder.select();
 	bg.document.execCommand("Copy");
 	clipboardholder.style.display="none";
-	topBar("Content copied to clipboard!",j)
+	topBar("클립보드에 복사되었습니다!",j)
 }
 
 function getHTMLEncode(j) {
