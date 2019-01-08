@@ -22,6 +22,15 @@
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
 
+   "commands": {
+      "sidebar_action": {
+         "suggested_key": {
+            "default": "Alt+C"
+         },
+         "description": "사이드바 On/Off 단축키"
+      }
+   },
+
    "icons": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -30,8 +39,12 @@
       "128": "icons/icon128.png"
    },
 
-   "permissions": [ "tabs" ],
+   "permissions": [
+      "tabs"
+   ],
 
-   "web_accessible_resources": []
+   "web_accessible_resources": [
+      "icons/remove16.png"
+   ]
 
 }
