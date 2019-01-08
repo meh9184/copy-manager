@@ -9,7 +9,7 @@
    },
 
    "sidebar_action": {
-      "default_icon": "icons/icon_128.png",
+      "default_icon": "icons/icon48.png",
       "default_page": "sidebar_action/sidebar_action.html",
       "default_title": "Copy Manager"
    },
@@ -23,7 +23,11 @@
    } ],
 
    "icons": {
-      "128": "icons/icon_128.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "64": "icons/icon64.png",
+      "128": "icons/icon128.png"
    },
 
    "permissions": [ "tabs" ],
