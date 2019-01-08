@@ -23,7 +23,7 @@ function assignBadge(){
     var a = allClips.length;
 
     // alert("new badge:"+ a);
-    chrome.browserAction.setBadgeText({text:""+a});
+    whale.sidebarAction.setBadgeText({text:""+a});
     // chrome.browserAction.setTitle({title:a+"  clips"})
 }
 

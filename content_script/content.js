@@ -2,6 +2,7 @@ function floatBar() {
     var $myelement = $('#clipid');
     $myelement.css("text-align", "center");
     $myelement.css("font-weight", "bolder");
+    $myelement.css("opacity", "0.7");
     $(window).bind('scroll', function(){
         $myelement.css({
             position: 'absolute',
@@ -15,8 +16,8 @@ function floatBar() {
 function showMessageWhenCipped(data) {
     var trends_dom = document.createElement('div');
     trends_dom.setAttribute('id',"clipid");
-    trends_dom.innerText = '+ One clip added to clipboard!!!';
-    trends_dom.style.background = '#555';
+    trends_dom.innerText = '텍스트가 클립보드에 추가되었습니다.';
+    trends_dom.style.background = '#000000';
     trends_dom.style.color = '#fff';
     trends_dom.style.padding = '14px';
     trends_dom.style.position = 'fixed';
@@ -35,6 +36,7 @@ function updateClipboardFromBackground(data) {
 }
 // on copy event, send a message to background.html
 function onCopy(e) {
+
     var sel = window.getSelection();
     sel=sel + "";
     chrome.runtime.sendMessage({'event':'copy','text':sel},updateClipboardFromBackground);
