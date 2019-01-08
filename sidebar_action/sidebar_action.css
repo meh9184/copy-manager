@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
     /*background-color: #ffc596 !important;*/
-    background-color: #f3f3f3 !important;
+    /*background-color: #f3f3f3 !important;*/
+    background-color: rgb(57, 147, 123) !important;
+
     font-size:10pt;
     /*width:455px;*/
     /*overflow:auto;*/
@@ -41,6 +43,12 @@ label input{
     margin-left: 5px;
     margin-bottom: 10px;
 }
+.w3-white{
+    border-width: 5px;
+    border-color:#a8a8a8;
+    border-style: solid;
+    border-radius: 30px;
+}
 .w3-teal {
     background-color: #313236 !important;
 }
@@ -57,7 +65,12 @@ label input{
     text-decoration: none;
 }
 .navbar a:hover {
-    color: rgba(255, 208, 115, 0.88);
+    /*color: #FFD073;*/
+    /*color: rgb(57, 147, 123);*/
+    color: rgb(189, 237, 207);
+}
+.copyme:hover{
+    background-color: #e7e7e7;
 }
 #dt {
     font:80%/1.45em "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
@@ -141,19 +154,20 @@ td.details {
     line-height:22px;
 }
 .paging_full_numbers .paginate_button,.paging_full_numbers .paginate_current {
-    border:1px solid #AABCFE;
+    /*border:1px solid #AABCFE;*/
+    border:1px solid rgb(57, 147, 123);
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     cursor:pointer;
     margin:0 3px;
     padding:2px 5px;
-
 }
 .paging_full_numbers .paginate_button {
     background-color:#ddd;
 }
 .paging_full_numbers .paginate_button.current {
-    background-color:#F2F3FF;
+    /*background-color:#F2F3FF;*/
+    background-color: rgb(189, 237, 207);
     cursor:hand;
 }
 .paging_full_numbers .paginate_button:hover {
@@ -232,6 +246,7 @@ table.display td.center,.dataTables_empty {
 }
 .topbar {
     background: #1056BD;
+    /*background: rgb(57, 147, 123);*/
     border-bottom: solid 2px #EEE;
     padding: 3px 0;
     text-align: center;
