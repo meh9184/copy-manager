@@ -23,7 +23,7 @@
    } ],
 
    "commands": {
-      "_execute_sidebar_action": {
+      "sidebar_action": {
          "suggested_key": {
             "default": "Alt+C"
          },
