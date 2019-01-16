@@ -3,13 +3,13 @@
 
 <img src="./screenshots/screenshot_1.png" alt="Copy Manager"/> 
 
-클립보드에 저장된 여러 텍스트, [Copy Manager]()를 통해 효율적으로 사용해보세요!
+클립보드에 저장된 여러 텍스트, [Copy Manager](https://store.whale.naver.com/detail/kaimiajcapodfiigpgglolbnbhpmopjo)를 통해 효율적으로 사용해보세요!
 
 ## 설치 방법
 
 [사용자 모드]
 1. [웨일 브라우저](https://whale.naver.com) 다운로드 및 설치
-2. [Copy Manager]() 페이지 들어가서 '웨일에 추가하기' 클릭
+2. [Copy Manager](https://store.whale.naver.com/detail/kaimiajcapodfiigpgglolbnbhpmopjo) 페이지 들어가서 '웨일에 추가하기' 클릭
 
 [개발자 모드]
 
