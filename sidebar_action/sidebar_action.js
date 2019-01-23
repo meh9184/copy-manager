@@ -33,7 +33,7 @@
 		 var J=$(this).attr('remid');
 		 getBackground().removeClip(J+"");
 		 $(this).parent().parent().remove();
-
+		 location.reload();
 		 //displayRecords();
 	 });
 
