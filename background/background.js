@@ -54,10 +54,17 @@ function assignBadge(){
 function getAllClips(){
     return allClips
 }
+
 function removeClip(a){
     allClips.splice(a,1);
     assignBadge();
 }
+
+function removeAllClip(){
+    allClips = [];
+    assignBadge();
+}
+
 function returnClip(a){
     return allClips[a];
 };

@@ -33,12 +33,19 @@
 		 var J=$(this).attr('remid');
 		 getBackground().removeClip(J+"");
 		 $(this).parent().parent().remove();
+
 		 //displayRecords();
 	 });
 
 	 $("body").on("click",".copyme",function(){
 		 copyMe($(this).attr('id'));
 	 });
+
+	 $("body").on("click",".delete-all",function(){
+	 	getBackground().removeAllClip();
+		location.reload();
+	 });
+
 
 	 displayRecords();
 
