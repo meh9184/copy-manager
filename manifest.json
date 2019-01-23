@@ -2,7 +2,7 @@
    "name": "Copy Manager",
    "description": "클립보드에 저장된 여러 텍스트를 효율적으로 사용해보세요! ",
    "manifest_version": 2,
-   "version": "1.0.0",
+   "version": "1.1.0",
 
    "background": {
       "page": "background/background.html"
