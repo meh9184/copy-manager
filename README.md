@@ -1,5 +1,5 @@
 # copy-manager
-> 웹 브라우저에서 여러 텍스트를 복사할 수 있도록 클립보드를 관리해주는 Whale Extension 입니다.
+> 웹 브라우저에서 여러 텍스트를 복사할 수 있도록 클립보드를 관리해주는 Whale Extension
 
 <img src="./screenshots/screenshot_1.png" alt="Copy Manager"/> 
 
