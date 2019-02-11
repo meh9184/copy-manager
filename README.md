@@ -1,7 +1,17 @@
 # copy-manager
 > 웹 브라우저에서 여러 텍스트를 복사할 수 있도록 클립보드를 관리해주는 Whale Extension
 
-<img src="./screenshots/screenshot_1.png" alt="Copy Manager"/> 
+<div>
+  <div width='100%'>
+    <img src='./screenshots/screenshot_1.png' width='48%'>
+    <img src='./screenshots/screenshot_2.png' width='48%'>
+  </div>
+  <div width='100%'>
+    <img src='./screenshots/screenshot_3.png' width='48%'>
+    <img src='./screenshots/screenshot_4.png' width='48%'>
+  </div>
+</div>
+<br>
 
 클립보드에 저장된 여러 텍스트, [Copy Manager](https://store.whale.naver.com/detail/kaimiajcapodfiigpgglolbnbhpmopjo)를 통해 효율적으로 사용해보세요!
 
